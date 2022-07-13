@@ -11,6 +11,6 @@ module.exports = (router) => {
 
     });
 
-    router.route('/itemget').get(controller.itemget)
+    router.route('/itemget').post(controller.itemget)
 
 }

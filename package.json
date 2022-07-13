@@ -11,6 +11,9 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongoose": "^6.4.1"
+    "express-fileupload": "^1.4.0",
+    "mongoose": "^6.4.1",
+    "slugnid": "^1.0.3",
+    "uploadfilemodule": "^1.0.0"
   }
 }
