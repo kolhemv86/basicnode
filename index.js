@@ -24,16 +24,23 @@ app.use(fileUpload());
 app.get('/test', async(req,res) => {
     let results = {};
 
+    const COLUMNARRAY = {};
+    const addarr = [{address: 'test',gender: 'Male'},{address: 'test1',gender: 'fMale'}];
+
+    COLUMNARRAY.fname = 'Manoj';
+    COLUMNARRAY.lname = 'Kolhe';
+    COLUMNARRAY.addextra = addarr;
+
 
     results.status = 200;
-    results.data = [];
+    results.data = COLUMNARRAY;
     results.msg = 'Hello test';
     res.send(results);
 
 });
 
-
 app.use('/api/v1', routes(router));
+
 
 const port = 7500;
 
