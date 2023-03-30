@@ -76,7 +76,7 @@ console.log(calcu(true)); */
   
 
 var arr = [12, 13, 1, 10, 34, 16];
-var n = arr.length;
+var n = arr.length; 
 thirdLargest(arr, n); */
 
 
