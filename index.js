@@ -6,6 +6,7 @@ const path = require('path');
 const router = express.Router();
 const mongoose = require('mongoose');
 const fileUpload = require('express-fileupload');
+const helmet = require('helmet');
 
 const db = process.env.MONGO_LOCAL_CONN_URL
 
@@ -15,6 +16,8 @@ mongoose.connect(db,{ useNewUrlParser: true , useUnifiedTopology:true } )
 
 
 const routes = require('./routes/index.js');
+
+app.use(helmet());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
